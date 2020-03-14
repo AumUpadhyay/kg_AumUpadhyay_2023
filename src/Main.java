@@ -1,5 +1,4 @@
 import java.util.*;
-import java.io.*;
 
 /**
  * @author Aum Upadhyay
@@ -9,11 +8,12 @@ import java.io.*;
 public class Main {
 
 	public static void main(String[] args) {
-		Scanner inputReader = new Scanner(System.in);
-		System.out.println("s1: ");
-		String s1 = inputReader.nextLine();
-		System.out.println("s2: ");
-		String s2 = inputReader.nextLine();
+		if(args.length == 0) {
+			System.out.println("Please enter arguments");
+			return;
+		}
+		String s1 = args[0];
+		String s2 = args[1];
 		
 		System.out.println(isOneToOne(s1, s2));
 
