@@ -48,6 +48,9 @@ public class Main {
 					//if s2 character has mapping, but s1 character doesn't strings cannot be one-to-one
 					return false;
 				}
+			} else if (charMap[s1Current] != s2Current) {
+				//if s1 character doesn't map to s2 character, strings cannot be one-to-one
+				return false;
 			}
 		}
 		return true;
