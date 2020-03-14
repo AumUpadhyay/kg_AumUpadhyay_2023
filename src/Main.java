@@ -1,4 +1,5 @@
 import java.util.*;
+import java.io.*;
 
 /**
  * @author Aum Upadhyay
@@ -8,9 +9,12 @@ import java.util.*;
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		String s1 = "aac";
-		String s2 = "xxz";
+		Scanner inputReader = new Scanner(System.in);
+		System.out.println("s1: ");
+		String s1 = inputReader.nextLine();
+		System.out.println("s2: ");
+		String s2 = inputReader.nextLine();
+		
 		System.out.println(isOneToOne(s1, s2));
 
 	}
